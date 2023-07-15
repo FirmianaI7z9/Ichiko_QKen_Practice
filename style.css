@@ -4,6 +4,7 @@ html {
 
 @media screen and (max-width: 659px) {
   html {
+    -webkit-text-size-adjust: 100%;
     font-size: 5vw !important;
     font-size: 24px;
   }
