@@ -4,7 +4,7 @@ html {
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
-  html { font-size: 32px; }
+  html { font-size: 48px; }
 }
 
 .horizontal {
