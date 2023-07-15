@@ -4,7 +4,7 @@ html {
 
 @media screen and (max-width: 959px) {
   html {
-    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     font-size: 5vw !important;
     font-size: 24px;
   }
