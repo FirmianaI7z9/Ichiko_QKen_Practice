@@ -1,10 +1,10 @@
-body {
-  font-size: 16px;
+html {
+  font-size: 18px;
 }
 
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
-  body { font-size: 25px; }
+  html { font-size: 32px; }
 }
 
 .horizontal {
