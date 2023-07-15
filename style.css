@@ -2,7 +2,7 @@ html {
   font-size: 18px;
 }
 
-@media screen and (max-width: 659px) {
+@media screen and (max-width: 959px) {
   html {
     -webkit-text-size-adjust: 100%;
     font-size: 5vw !important;
