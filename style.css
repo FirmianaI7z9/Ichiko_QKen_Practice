@@ -1,0 +1,7 @@
+.horizontal {
+  display: flex;
+}
+
+.horizontal .child {
+  margin-left: 10px;
+}

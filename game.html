@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>市高クイ研自主練サイト</title>
+  <link rel="stylesheet" href="style.css">
+  <script language="javascript" src="main.js"></script>
+</head>
+
+<body>
+  <div class="horizontal">
+    <button type="button" class="child" onclick="location.href='index.html'">終了</button>
+  </div>
+  <p id="genre" style="font-size: large; font-weight: bold;">ジャンル表示</p>
+  <hr style="border:none;border-top:dashed 1px #000000;height:1px;">
+  <p id="qnum">N問目/K問中</p>
+  <p id="qtext">問題文</p>
+  <p style="font-size: smaller;">解答欄↓</p>
+  <div class="horizontal">
+    <input type="text" class="child" id="ansarea" style="width: 300px;">
+    <button class="child" id="sub">解答</button>
+    <button class="child" id="next" disabled="true">次へ</button>
+  </div>
+  <p id="ansfield" style="color:#ff0000; font-weight: bold;">正解</p>
+</body>
+
+</html>
