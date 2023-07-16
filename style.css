@@ -1,14 +1,16 @@
 html {
   font-size: 18px;
-  font-family: sans-selif;
 }
 
 @media screen and (max-width: 1059px) {
   html {
     text-size-adjust: 100%;
-    font-family: sans-selif;
     font-size: 5vw !important;
   }
+}
+
+body {
+  font-family: sans-serif;
 }
 
 .horizontal {
