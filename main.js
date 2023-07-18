@@ -1,6 +1,7 @@
 let data;
 let qnum = 0;
 let qsize;
+let canum = 0, wanum = 0;
 
 function init() {
   let query = location.search;
@@ -46,8 +47,10 @@ window.onload = function () {
     let answ = document.getElementById("ansarea").value;
     if (answ == data[qnum].ans) {
       document.getElementById("ansfield").textContent = "正解です。";
+      canum += 1;
     } else {
       document.getElementById("ansfield").textContent = "不正解です。正解は：" + data[qnum].ans;
+      wanum += 1;
     }
     document.getElementById("next").disabled = false;
   }
@@ -56,7 +59,8 @@ window.onload = function () {
     if (qsize == qnum + 1) {
       document.getElementById("sub").disabled = true;
       document.getElementById("next").disabled = true;
-      document.getElementById("ansfield").textContent = "全問題終了です。";
+      document.getElementById("ansfield").textContent = "全問題終了です。今回の成績：" + canum + "問正解／"
+        + wanum + "問不正解で、正解率" + (canum / qsize * 100).toFixed(1) + "%でした。";
     } else {
       qnum += 1;
       displayQuiz();
