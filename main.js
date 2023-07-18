@@ -45,8 +45,13 @@ window.onload = function () {
 
   document.getElementById("sub").onclick = function(){
     let answ = document.getElementById("ansarea").value;
-    if (answ == data[qnum].ans) {
-      document.getElementById("ansfield").textContent = "正解です。";
+    let cans = data[qnum].ans.split('/');
+    if (cans.includes(answ)) {
+      if (cans.length == 1) {
+        document.getElementById("ansfield").textContent = "正解です。";
+      } else {
+        document.getElementById("ansfield").textContent = "正解です。なお、以下は全て正解です：" + data[qnum].ans;
+      }
       canum += 1;
     } else {
       document.getElementById("ansfield").textContent = "不正解です。正解は：" + data[qnum].ans;
