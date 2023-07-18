@@ -9,7 +9,7 @@ function init() {
  
   document.getElementById("genre").textContent = "ジャンル：" + value;
 
-  let requestURL = 'json/' + value + '.json';
+  let requestURL = 'json/' + value.replace('-','/') + '.json';
   let request = new XMLHttpRequest();
   request.open('GET', requestURL);
   request.responseType = 'json';
