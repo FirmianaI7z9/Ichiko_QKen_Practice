@@ -7,6 +7,7 @@ function init() {
   let query = location.search;
   let value = query.split('=')[1];
   value = decodeURI(value);
+  document.title = "市高クイ研自主練サイト | " + value;
  
   document.getElementById("genre").textContent = "ジャンル：" + value;
 
