@@ -67,6 +67,7 @@ window.onload = function () {
       document.getElementById("next").disabled = true;
       document.getElementById("ansfield").textContent = "全問題終了です。今回の成績：" + canum + "問正解／"
         + wanum + "問不正解で、正解率" + (canum / qsize * 100).toFixed(1) + "%でした。";
+      // Google Spreadsheet に記録送信する処理予定
     } else {
       qnum += 1;
       displayQuiz();
