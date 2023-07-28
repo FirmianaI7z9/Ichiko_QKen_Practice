@@ -192,7 +192,8 @@ li {
 .horizontal {
   display: flex;
   flex-wrap: wrap;
-  margin: 2% 0px;
+  margin: 1% 0px;
+  height: fit-content;
 }
 
 .horizontal .child {
