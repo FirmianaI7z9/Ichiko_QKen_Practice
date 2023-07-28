@@ -48,7 +48,9 @@ window.onload = function () {
 
   document.getElementById("sub").onclick = function(){
     if(document.getElementById("sub").textContent == "解答") {
-      let answ = document.getElementById("ansarea").value;
+      let answ = document.getElementById("ansarea").value.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
+        return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
+      });
       let cans = data[qnum].ans.split('/');
       if (cans.includes(answ)) {
         if (cans.length == 1) {
