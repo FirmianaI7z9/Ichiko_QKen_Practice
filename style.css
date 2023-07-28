@@ -201,6 +201,10 @@ td {
   border-bottom: solid 1px #000000;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 @media screen and (max-width: 1059px) {
   html {
     text-size-adjust: 100%;
