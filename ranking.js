@@ -19,7 +19,8 @@ async function init() {
     else if (i == 1) clone_element.style = "border-color: #696969; background-color: #eeeeee;";
     else if (i == 2) clone_element.style = "border-color: #ae5d00; background-color: #ffd7b0;";
     else clone_element.style = "border-color: #31f1ff; background-color: #ffffff;";
-    clone_element.querySelector('.rank').innerHTML = (i+1) + '<span style="font-size: 80%;">' + indicator(i+1) + '</span>';
+    clone_element.querySelector('.rank').innerHTML = (i+1) + '<span style="font-size: 70%;">' + indicator(i+1) + '</span>';
+    if (data.id.length > 10) data.id = data.id.substr(0,10) + '...';
     clone_element.querySelector('.name').textContent = data.id;
     clone_element.querySelector('.name').style = "color: #" + getColor(data.id, data.cor) + ";";
     clone_element.querySelector('.value').textContent = (data.ans).toLocaleString() + '問';

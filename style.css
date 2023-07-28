@@ -298,8 +298,7 @@ td {
   }
 
   .ranking_container .element .rank {
-    font-size: 160%;
-    width: 25%;
+    font-size: 150%;
   }
 
   .ranking_container .element .name {
@@ -307,7 +306,7 @@ td {
   }
 
   .ranking_container .element .value {
-    font-size: 110%;
-    width: 25%;
+    font-size: 105%;
+    width: 30%;
   }
 }
