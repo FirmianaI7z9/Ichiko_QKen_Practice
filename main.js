@@ -87,7 +87,7 @@ window.onload = function () {
           document.getElementById("ansarea").value = '';
         }
         document.getElementById("ansfield").innerHTML = "全問題終了です。<br>今回の成績：" + canum + "問正解／"
-          + wanum + "問不正解で、正解率" + (canum / qsize * 100).toFixed(3) + "%でした。"
+          + wanum + "問不正解で、正解率" + (canum / qsize * 100).toFixed(2) + "%でした。"
           + "<br>成績を記録する場合は上の入力欄にニックネーム(記号使用不可)を入力して、「送信」を押してください。"
           + "また、再度同じセットに解答する場合は「再開」を押してください。";
       } else {

@@ -60,7 +60,7 @@ async function init() {
     clone_element.querySelector('.rank').innerHTML = (i+1) + '<span style="font-size: 80%;">' + indicator(i+1) + '</span>';
     clone_element.querySelector('.name').textContent = data.id;
     clone_element.querySelector('.name').style = "color: #" + getColor(data.id, data.cor) + ";";
-    clone_element.querySelector('.value').textContent = (Math.floor(data.rate * 10000) / 100).toFixed(3) + '%';
+    clone_element.querySelector('.value').textContent = (Math.floor(data.rate * 100000) / 1000).toFixed(3) + '%';
     base_element.parentNode.appendChild(clone_element);
   }
 }
