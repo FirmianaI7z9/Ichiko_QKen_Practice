@@ -2,17 +2,191 @@ html {
   font-size: 17px;
 }
 
-@media screen and (max-width: 1059px) {
-  html {
-    text-size-adjust: 100%;
-    font-size: 4.5vw !important;
-  }
-}
-
 body {
   font-family: sans-serif;
-  width: 95%;
+  width: 80%;
   margin: 2% auto;
+  background-color: #f0f8ff;
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 150%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 130%;
+  color: #ffffff;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #696969;
+  height: 36px;
+  line-height: normal;
+}
+
+h2:before {
+  content: "◆";
+  font-size: 100%;
+  left: 0;
+  top: 0;
+  color: #5ab9ff;
+}
+
+h3 {
+  font-size: 120%;
+  margin: 0.5em 0px;
+}
+
+p {
+  margin: 0.5em 0px;
+}
+
+li {
+  margin: 0.5em 0px;
+}
+
+.top_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.top_container button {
+  color: #ffffff;
+  font-size: 100%;
+  font-weight: bold;
+  text-align: center;
+  height: 40px;
+  background-color: #000000;
+  border: none;
+  margin: 0px 1px 0px 1px;
+  width: fit-content;
+  padding: 0px 20px;
+}
+
+.top_container button:hover {
+  background-color: #696969;
+}
+
+.announce_container {
+  border: solid 1px #0000ff;
+  background-color: #DDEEFF;
+  margin: 0.5% 1% 0.5% 1%;
+  padding: 0.5% 1% 0.5% 1%;
+  height: fit-content;
+  margin-bottom: 1%;
+}
+
+.announce_container .date {
+  font-size: 50%;
+}
+
+.genrepreview_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0% 0.5% 0% 0.5%;
+  height: fit-content;
+  margin-bottom: 1%;
+  justify-content: center;
+}
+
+.genrepreview_container .element {
+  border: solid 1px #000000;
+  background-color: #DDDDDD;
+  height: fit-content;
+  width: 270px;
+  margin: 0.2% 0.2% 0.2% 0.2%;
+  padding: 0.5% 1% 0.5% 1%;
+}
+
+.genrepreview_container .element a {
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.genrepreview_container .element p {
+  height: 80px;
+}
+
+.genre_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0% 0.5% 0% 0.5%;
+  height: fit-content;
+  margin-bottom: 1%;
+  justify-content: center;
+}
+
+.genre_container .element {
+  border: solid 1px;
+  background-color: #FFFFFF;
+  margin: 0.25% 0.5% 0.25% 0.5%;
+  padding: 0.5% 1% 0.5% 1%;
+  width: 550px;
+  height: fit-content;
+  margin-bottom: 1%;
+}
+
+.genre_container .element a {
+  text-decoration-line: none;
+  color: #000000;
+}
+
+.genre_container .element .p1 {
+  height: 70px;
+}
+
+.genre_container .element .p2 {
+  height: 20px;
+}
+
+.ranking_container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0% 0.5% 0% 0.5%;
+  height: fit-content;
+  margin-bottom: 1%;
+  justify-content: center;
+}
+
+.ranking_container .element {
+  display: flex;
+  justify-content: center;
+  border: solid 1px;
+  background-color: #FFFFFF;
+  margin: 0.25% 0.5% 0.25% 0.5%;
+  padding: 0.5% 1% 0.5% 1%;
+  width: 550px;
+  height: 50px;
+  margin-bottom: 1%;
+}
+
+.ranking_container .element .rank {
+  font-size: 200%;
+  font-weight: bold;
+  width: 20%;
+  margin: auto 0%;
+}
+
+.ranking_container .element .name {
+  font-size: 130%;
+  font-weight: bold;
+  width: 50%;
+  margin: auto 0%;
+}
+
+.ranking_container .element .value {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: right;
+  width: 20%;
+  margin: auto 0%;
+}
+
+.js-based {
+  display: none;
 }
 
 .horizontal {
@@ -21,4 +195,109 @@ body {
 
 .horizontal .child {
   margin-left: 10px;
+}
+
+td {
+  border-bottom: solid 1px #000000;
+}
+
+@media screen and (max-width: 1059px) {
+  html {
+    text-size-adjust: 100%;
+    font-size: 4vw !important;
+  }
+
+  body {
+    width: 95%;
+  }
+  
+  h1 {
+    font-size: 110%;
+  }
+  
+  h2 {
+    font-size: 120%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: fit-content;
+  }
+  
+  h3 {
+    font-size: 110%;
+    line-height: 130%;
+  }
+  
+  .top_container button {
+    font-size: 110%;
+    height: fit-content;
+    margin: 0px 2px 0px 2px;
+    padding: 5px 10px;
+  }
+  
+  .announce_container {
+    padding: 1% 2% 1% 2%;
+  }
+  
+  .announce_container .date {
+    font-size: 70%;
+  }
+  
+  .genrepreview_container {
+    padding: 0% 1% 0% 1%;
+  }
+  
+  .genrepreview_container .element {
+    width: 100%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    padding: 1% 2% 1% 2%;
+  }
+  
+  .genrepreview_container .element p {
+    height: fit-content;
+  }
+  
+  .genre_container {
+    padding: 0% 1% 0% 1%;
+    margin-bottom: 2%;
+  }
+  
+  .genre_container .element {
+    margin: 0.5% 1% 0.5% 1%;
+    padding: 1% 2% 1% 2%;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  
+  .genre_container .element .p1 {
+    height: fit-content;
+  }
+  
+  .genre_container .element .p2 {
+    height: fit-content;
+  }
+
+  .ranking_container {
+    padding: 0% 1% 0% 1%;
+    margin-bottom: 2%;
+  }
+
+  .ranking_container .element {
+    margin: 0.5% 1% 0.5% 1%;
+    padding: 1% 2% 1% 2%;
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 2%;
+  }
+
+  .ranking_container .element .rank {
+    font-size: 160%;
+  }
+
+  .ranking_container .element .name {
+    font-size: 120%;
+  }
+
+  .ranking_container .element .value {
+    font-size: 110%;
+  }
 }

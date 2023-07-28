@@ -3,25 +3,64 @@
 
 <head>
   <meta charset="utf-8">
-  <title>市高クイ研自主練サイト</title>
+  <title>市高クイ研自主練サイト | 使い方・注意事項</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWZQ75CRZ4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BWZQ75CRZ4');
+  </script>
 </head>
 
 <body>
-  <div class="horizontal">
-    <button type="button" class="child" onclick="location.href='index.html'" style="font-size: 0.9rem">戻る</button>
+  <h1>市高クイ研自主練サイト</h1>
+
+  <div class="top_container">
+    <button type="button" class="child" onclick="location.href='index.html'">ホーム</button>
+    <button type="button" class="child" onclick="location.href='quiz.html'">クイズ自主練</button>
+    <button type="button" class="child" onclick="location.href='ranking.html'">ランキング</button>
+    <button type="button" class="child" onclick="location.href='caution.html'">使い方・注意事項</button>
+    <button type="button" class="child" onclick="location.href='update.html'">更新情報</button>
+    <button type="button" class="child" onclick="location.href='request.html'">お問い合わせ</button>
   </div>
-  <h2>使用上の注意[更新中]</h2>
+
+  <h2>使い方・注意事項</h2>
   <ul>
     <li>解答上の注意</li>
     <ul>
       <li>アルファベット及び算用数字は全て「半角」で入力してください。</li>
       <li>解答に空白を含めないでください。</li>
-      <li>「何事件」「何の川流れ」などと「」入りで問われる場合、「何」に入る部分だけ答えてください。ただし「何山」のように「」かぎかっこ無しや基本的に一語の場合はそのまま答えてください。</li>
+      <li>「何事件」「何の川流れ」などと「」入りで問われる場合、「何」に入る部分だけ答えてください。
+        ただし「何山」のように「」無し、もしくは基本的に一語の場合はそのまま答えてください。</li>
       <li>数値を答える場合、単位は原則不要です。</li>
       <li>作品名のかぎ括弧は不要です。</li>
     </ul>
+    <li>ランキング機能の注意</li>
+    <ul>
+      <li>ランキングは自動更新です。ランキングページを更新するたびにデータベースへのアクセスが生じるため、
+        無意味にリロードしまくると通信量が嵩むことがあります。サイトのデータ量は極力小さくしてあるので、自己責任でお願いします。</li>
+      <li>現状ログインシステムではないため、名前が重ならないように努めてください。
+        (機を見てログイン方式orユニークID方式にするかもしれません)</li>
+      <li>ユーザ名には次の文字のみを使用することを推奨します：</li>
+      <ul>
+        <li>半角アルファベット・数字</li>
+        <li>半角記号類の一部(ハイフン(-)、アンダーバー(_))</li>
+        <li>全角アルファベット・数字</li>
+        <li>全角ひらがな・カタカナ・漢字</li>
+        <li>半角カタカナ</li>
+      </ul>
+      <li>ユーザ名に以下の文字は使用できません：</li>
+      <ul>
+        <li>半角記号類 (例：!"#$%&'()=^~\|@`[{;+:*]},<.>/?)</li>
+        <li>UTF-16などの絵文字</li>
+        <li>環境依存文字</li>
+      </ul>
+    </ul>
   </ul>
+  <p style="font-size: 70%; text-align: center;">Copyright © 2023 FirmianaI7z9</p>
 </body>
 
 </html>

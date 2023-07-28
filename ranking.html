@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>市高クイ研自主練サイト | ランキング</title>
+  <link rel="stylesheet" href="style.css">
+  <script lang="javascript" src="ranking.js"></script>
+  <script lang="javascript" src="database.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWZQ75CRZ4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BWZQ75CRZ4');
+  </script>
+</head>
+
+<body>
+  <h1>市高クイ研自主練サイト</h1>
+
+  <div class="top_container">
+    <button type="button" class="child" onclick="location.href='index.html'">ホーム</button>
+    <button type="button" class="child" onclick="location.href='quiz.html'">クイズ自主練</button>
+    <button type="button" class="child" onclick="location.href='ranking.html'">ランキング</button>
+    <button type="button" class="child" onclick="location.href='caution.html'">使い方・注意事項</button>
+    <button type="button" class="child" onclick="location.href='update.html'">更新情報</button>
+    <button type="button" class="child" onclick="location.href='request.html'">お問い合わせ</button>
+  </div>
+
+  <p>ランキングはリアルタイムに更新されます。このページを更新するとランキングが最新のものになります。</p>
+
+  <h2>累計解答問題数ランキング</h2>
+  <div class="ranking_container" id="anum_rank">
+    <div id="rank1" class="element" style="border-color: #e4c900; background-color: #ffff65; display: none;">
+      <span class="rank"></span>
+      <span class="name">読み込み中……</span>
+      <span class="value"></span>
+    </div>
+  </div>
+
+  <h2>累計正解問題数ランキング</h2>
+  <div class="ranking_container" id="cnum_rank">
+    <div id="rank2" class="element" style="border-color: #e4c900; background-color: #ffd7b0; display: none;">
+      <span class="rank"></span>
+      <span class="name">読み込み中……</span>
+      <span class="value"></span>
+    </div>
+  </div>
+
+  <h2>正解率ランキング</h2>
+  <div class="ranking_container" id="crate_rank">
+    <div id="rank3" class="element" style="border-color: #e4c900; background-color: #ffff65; display: none;">
+      <span class="rank"></span>
+      <span class="name">読み込み中……</span>
+      <span class="value"></span>
+    </div>
+  </div>
+
+  <h2>ランキング表示名の色付けについて</h2>
+  <p>このサイトでは、ランキングに表示されるユーザの名前の色を、<b>累計正解数</b>に応じて決めています。色と正解数の対応は下表の通りです。<br>
+    (AtCoderやOnline Math Contestのレーティング表示を参考にしています)</p>
+  <p>なお、運営は正解数に依らず<span style="color: #AA00FF; font-weight: bold;">紫(#AA00FF)</span>です。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>　　必要正解数　　</th>
+        <th>　色(カラーコード)　</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: center;">100,000問以上</td>
+        <td style="color: #FF0000; text-align: center; font-weight: bold;">自由色(機能未定)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">10,000問以上</td>
+        <td style="color: #FF0000; text-align: center; font-weight: bold;">赤(#FF0000)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">5,000問以上</td>
+        <td style="color: #FF8800; text-align: center; font-weight: bold;">橙(#FF8800)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">2,000問以上</td>
+        <td style="color: #AAAA00; text-align: center; font-weight: bold;">黄(#AAAA00)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">1,000問以上</td>
+        <td style="color: #0000FF; text-align: center; font-weight: bold;">青(#0000FF)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">500問以上</td>
+        <td style="color: #00DDDD; text-align: center; font-weight: bold;">水(#00DDDD)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">300問以上</td>
+        <td style="color: #00BB00; text-align: center; font-weight: bold;">緑(#00BB00)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">100問以上</td>
+        <td style="color: #AE5D00; text-align: center; font-weight: bold;">茶(#AE5D00)</td>
+      </tr>
+      <tr>
+        <td style="text-align: center;">100問未満</td>
+        <td style="color: #000000; text-align: center; font-weight: bold;">黒(#000000)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="font-size: 70%; text-align: center;">Copyright © 2023 FirmianaI7z9</p>
+</body>
+
+</html>
