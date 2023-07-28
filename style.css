@@ -191,6 +191,7 @@ li {
 
 .horizontal {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .horizontal .child {
