@@ -285,12 +285,14 @@ td {
     margin: 0.5% 1% 0.5% 1%;
     padding: 1% 2% 1% 2%;
     width: 100%;
-    height: 2rem;
+    min-height: 2.5rem;
+    height: fit-content;
     margin-bottom: 2%;
   }
 
   .ranking_container .element .rank {
     font-size: 160%;
+    width: 25%;
   }
 
   .ranking_container .element .name {
@@ -299,5 +301,6 @@ td {
 
   .ranking_container .element .value {
     font-size: 110%;
+    width: 25%;
   }
 }
