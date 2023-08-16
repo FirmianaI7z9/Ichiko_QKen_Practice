@@ -1,4 +1,4 @@
-var databaseURL = 'https://script.google.com/macros/s/AKfycbxfvN8lqybZ2YEsSC_D87iGuZNAzEdc3LQka4N5Y6AHYbhtejHmwPVM0_ZDM5agctQM/exec';
+var databaseURL = 'https://script.google.com/macros/s/AKfycbxT8uXkfokMD-Ae282E6o3Lg3Ct7Kpkt6uo5uZVbTdL3licnjY577Ud3ZZxqoeiwXVo/exec';
 
 async function getData(id) {
   return await get(id);
