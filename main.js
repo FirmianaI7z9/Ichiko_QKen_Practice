@@ -13,7 +13,7 @@ function init(){
   r.onload=function(){
     d=r.response;
     d=JSON.parse(JSON.stringify(d));
-    d=d.quiz;
+    d=d.q;
     qs=d.length;
     const shuffleArray=(ar)=>{
       const cloneArray=[...ar];
@@ -34,13 +34,13 @@ window.onload=function(){
   document.getElementById("sub").onclick=function(){
     if(document.getElementById("sub").textContent=="解答") {
       let aw=document.getElementById("aa").value.replace(/[Ａ-Ｚａ-ｚ０-９]/g,function(s){return String.fromCharCode(s.charCodeAt(0)-0xFEE0);});
-      let c=d[qn].ans.split('/');
+      let c=d[qn].a.split('/');
       if(c.includes(aw)){
         if(c.length==1){document.getElementById("af").textContent="正解です。";}
-        else{document.getElementById("af").textContent="正解です。なお、以下は全て正解です："+d[qn].ans;}
+        else{document.getElementById("af").textContent="正解です。なお、以下は全て正解です："+d[qn].a;}
         can+=1;
       }else{
-        document.getElementById("af").textContent="不正解です。正解は："+d[qn].ans;
+        document.getElementById("af").textContent="不正解です。正解は："+d[qn].a;
         wan+=1;
       }
       document.getElementById("next").disabled=false;
@@ -95,7 +95,7 @@ function displayQuiz(){
   document.getElementById("next").disabled=true;
   document.getElementById("sub").disabled=false;
   document.getElementById("qnum").textContent=(qn+1)+"問目/"+qs+"問中";
-  document.getElementById("qtext").textContent=d[qn].text;
+  document.getElementById("qtext").textContent=d[qn].t;
   document.getElementById("aa").value="";
   document.getElementById("af").textContent="";
 }
