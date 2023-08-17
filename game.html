@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="utf-8">
-  <title>市高クイ研自主練サイト | 演習</title>
+  <title>市高クイ研自主練サイト | 自主練問題集</title>
   <link rel="stylesheet" href="style.css">
-  <script lauguage="javascript" src="database.js"></script>
-  <script language="javascript" src="main.js"></script>
-  <!-- Google tag (gtag.js) -->
+  <script language="javascript"src="index.js"></script>
+  <script language="javascript"src="database.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWZQ75CRZ4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-BWZQ75CRZ4');
-  </script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BWZQ75CRZ4');</script>
 </head>
-
 <body>
   <h1>市高クイ研自主練サイト</h1>
-
-  <div class="top_container">
-    <button type="button" class="child" onclick="location.href='index.html'">ホーム</button>
-    <button type="button" class="child" onclick="location.href='quiz.html'">クイズ自主練</button>
-    <button type="button" class="child" onclick="location.href='ranking.html'">ランキング</button>
-    <button type="button" class="child" onclick="location.href='caution.html'">使い方・注意事項</button>
-    <button type="button" class="child" onclick="location.href='update.html'">更新情報</button>
-    <button type="button" class="child" onclick="location.href='request.html'">お問い合わせ</button>
+  <div class="tc">
+    <button type="button"onclick="location.href='index.html'">ホーム</button>
+    <button type="button"onclick="location.href='quiz.html'">クイズ自主練</button>
+    <button type="button"onclick="location.href='ranking.html'">ランキング</button>
+    <button type="button"onclick="location.href='caution.html'">使い方・注意事項</button>
+    <button type="button"onclick="location.href='update.html'">更新情報</button>
+    <button type="button"onclick="location.href='request.html'">お問い合わせ</button>
   </div>
-
   <h2 id="genre">ジャンル表示</h2>
-  
-  <p id="qnum" style="font-weight: bold;">N問目/K問中</p>
+  <p id="qnum"style="font-weight:bold;">N問目/K問中</p>
   <p id="qtext">問題文</p>
-  <p style="font-size: 90%;">解答欄↓</p>
-  <input type="text" id="ansarea" style="width: 97%; font-size: 100%;">
-  <div class="horizontal">
-    <button class="child" id="sub" style="font-size: 100%">解答</button>
-    <button class="child" id="next" disabled="true" style="font-size: 100%">次へ</button>
+  <p style="font-size:90%;">解答欄↓</p>
+  <input type="text"id="aa"style="width:97%;font-size:100%;">
+  <div class="ho">
+    <button class="c"id="sub"style="font-size:100%">解答</button>
+    <button class="c"id="next"disabled="true"style="font-size:100%">次へ</button>
   </div>
-  <p id="ansfield" style="color:#ff0000; font-weight: bold; height: 8rem;"></p>
-  
-  <p style="font-size: 70%; text-align: center;">Copyright © 2023 FirmianaI7z9</p>
+  <p id="af"style="color:#f00;font-weight:bold;height:8rem;"></p>
+  <p class="cr">Copyright © 2023 FirmianaI7z9</p>
 </body>
-
 </html>
